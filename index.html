@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Green Thumb Landscaping &amp; Garden Center | Jasper &amp; St. Anthony, IN</title>
+<meta name="description" content="Dubois County's oldest florist & garden center and most trusted landscaping company. For all your garden and landscape needs in St. Anthony and Jasper, IN, call (812) 482-3338 or (812) 326-2414.">
+<meta name="theme-color" content="#101218">
+<link rel="icon" type="image/webp" href="images/logo.webp">
+<link rel="apple-touch-icon" href="images/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Brand book palette: Jade #008E4D · Brunswick #126A47 · Obsidian #101218 · White */
+  --forest:#101218; --forest-2:#1c2a23; --brunswick:#126A47;
+  --emerald:#008E4D; --emerald-2:#13a85f;
+  --cream:#eef3ee; --paper:#fbfdfb; --clay:#008E4D; --clay-2:#0b7a43;
+  --sage:#d8e8dd; --sage-line:#cce0d3; --ink:#101218; --muted:#566b5d;
+  --display:"Oswald",Impact,system-ui,sans-serif;
+  --body:"Montserrat",ui-sans-serif,system-ui,sans-serif;
+  --maxw:1200px; --r:16px; --r-sm:10px;
+  --shadow:0 2px 4px rgba(17,35,26,.05),0 18px 44px rgba(17,35,26,.13);
+  --shadow-lg:0 40px 90px rgba(17,35,26,.3);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--body);color:var(--ink);background:var(--cream);line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit;color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:0;margin:0 0 .35em;text-transform:uppercase}
+h1{font-size:clamp(2.9rem,7.4vw,5.8rem);font-weight:700}
+h2{font-size:clamp(2rem,4.4vw,3.4rem)}
+h3{font-size:1.5rem;font-weight:600}
+.it{font-style:normal;color:var(--emerald);text-transform:none;font-weight:500}
+.hero .it,.band-forest .it{color:#7fd9a6}
+p{margin:0 0 1rem}
+.wrap{width:min(var(--maxw),100% - 44px);margin-inline:auto}
+.narrow{max-width:760px}
+.section{padding:clamp(60px,8vw,118px) 0}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--body);font-size:.74rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--emerald);margin:0 0 18px}
+.eyebrow::before{content:"";width:24px;height:1.5px;background:var(--emerald)}
+.eyebrow.c{color:var(--clay)}.eyebrow.c::before{background:var(--clay)}
+.eyebrow.on::before{background:var(--sage)}.eyebrow.on{color:var(--sage)}
+.lead{font-size:clamp(1.08rem,1.7vw,1.3rem);color:var(--muted);max-width:62ch}
+.prose p{font-size:1.05rem;color:var(--muted);max-width:68ch}
+.band-forest .prose p{color:rgba(255,255,255,.82)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:54px;padding:0 26px;border:0;border-radius:999px;font-weight:700;cursor:pointer;white-space:nowrap;transition:transform .18s,background .18s,box-shadow .18s,color .18s}
+.btn svg{width:19px;height:19px}
+.btn:hover{transform:translateY(-2px)}
+.btn-clay{background:var(--clay);color:#fff;box-shadow:0 10px 26px rgba(194,96,58,.32)}
+.btn-clay:hover{background:var(--clay-2)}
+.btn-green{background:var(--emerald);color:#fff}
+.btn-green:hover{background:#19663f}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.4)}
+.btn-ghost:hover{background:rgba(255,255,255,.22)}
+.btn-outline{background:transparent;color:var(--forest);border:1.5px solid var(--forest)}
+.btn-outline:hover{background:var(--forest);color:#fff}
+.btn-lg{min-height:60px;padding:0 34px;font-size:1.06rem}
+
+.hdr{position:sticky;top:0;z-index:50;background:rgba(16,18,24,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.1);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:15px 0}
+.brand{display:inline-flex;align-items:center;gap:11px;font-family:var(--display);font-size:1.5rem;letter-spacing:-.01em}
+.brand svg{width:34px;height:34px;color:var(--emerald-2)}
+.brand-logo{width:42px;height:42px;border-radius:50%;background:#fff;padding:5px;object-fit:contain;box-shadow:0 2px 9px rgba(0,0,0,.2)}
+.nav-links{display:flex;gap:26px}
+.nav-links a{font-size:.95rem;font-weight:500;color:rgba(255,255,255,.82)}
+.nav-links a:hover{color:#fff}
+.nav-actions{display:flex;align-items:center;gap:12px}
+.nav-toggle{display:none;background:none;border:0;color:#fff;cursor:pointer;padding:6px}
+.nav-toggle svg{width:28px;height:28px}
+
+.hero{position:relative;color:#fff;overflow:hidden;background:var(--forest)}
+.hero-media{position:absolute;inset:0;z-index:0}
+.hero-media img{width:100%;height:100%;object-fit:cover}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(13,28,20,.94) 6%,rgba(13,28,20,.66) 46%,rgba(13,28,20,.28)),linear-gradient(0deg,rgba(13,28,20,.7),transparent 50%)}
+.hero-inner{position:relative;z-index:1;padding:clamp(70px,11vw,140px) 0 clamp(120px,14vw,180px)}
+.hero h1{margin-bottom:.2em}
+.hero .sub{font-size:clamp(1.1rem,1.9vw,1.4rem);color:rgba(255,255,255,.88);max-width:48ch;margin-bottom:30px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+.awards{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);border-radius:999px;font-size:.82rem;font-weight:600}
+.chip svg{width:15px;height:15px;color:var(--clay)}
+.hero-wave{position:absolute;left:0;right:0;bottom:-1px;z-index:1;color:var(--cream);line-height:0}
+.hero-wave svg{width:100%;height:auto;display:block}
+
+.s-head{max-width:820px;margin-bottom:46px}
+.s-head.center{margin-inline:auto;text-align:center}
+.s-head.center .eyebrow{padding-left:0}.s-head.center .eyebrow::before{display:none}
+
+.feature{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,70px);align-items:center}
+.feature.flip .feat-media{order:2}
+.feat-media{border-radius:var(--r);overflow:hidden;aspect-ratio:4/4;box-shadow:var(--shadow)}
+.feat-media img{width:100%;height:100%;object-fit:cover}
+.band-forest{background:var(--brunswick);color:#fff}
+.band-forest .lead{color:rgba(255,255,255,.82)}
+.band-sage{background:var(--sage)}
+.tick{list-style:none;padding:0;margin:8px 0 30px;display:grid;gap:13px}
+.tick li{display:grid;grid-template-columns:24px 1fr;gap:12px;font-weight:500}
+.tick svg{width:22px;height:22px;color:var(--emerald-2)}
+.band-forest .tick svg{color:var(--sage)}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--paper);border:1px solid var(--sage-line);border-radius:var(--r);overflow:hidden;transition:transform .22s,box-shadow .22s}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.card .ph{aspect-ratio:16/10;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .ph img{transform:scale(1.06)}
+.card-body{padding:24px 26px 28px}
+.card-body h3{color:var(--forest);font-size:1.5rem}
+.card-body p{color:var(--muted);font-size:.97rem;margin:0}
+
+.trust{display:flex;flex-wrap:wrap;justify-content:center;gap:16px 38px;align-items:center}
+.trust .t{display:flex;align-items:center;gap:11px;font-weight:600}
+.trust .t svg{width:26px;height:26px;color:var(--clay);flex:0 0 auto}
+.trust .t b{font-family:var(--display);font-size:1.15rem;font-weight:400}
+
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.review{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:var(--r);padding:28px}
+.review .st{color:#ffd166;letter-spacing:2px;margin-bottom:12px;font-size:1.05rem}
+.review p{font-size:1.02rem;color:rgba(255,255,255,.94);font-style:italic;font-family:var(--body);line-height:1.55}
+.review cite{font-style:normal;font-weight:700;color:var(--sage);font-size:.9rem}
+
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,4vw,54px);align-items:start}
+.loc-cards{display:grid;gap:16px}
+.loc-card{background:var(--paper);border:1px solid var(--sage-line);border-radius:var(--r);padding:26px 28px}
+.loc-card .tag{font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--emerald)}
+.loc-card h3{color:var(--forest);font-size:1.5rem;margin:.25em 0 .15em}
+.loc-card p{color:var(--muted);font-size:.96rem;margin:0 0 14px}
+.loc-card a.tel{font-weight:700;color:var(--clay)}
+.visit-card{background:var(--forest);color:#fff;border-radius:var(--r);padding:clamp(28px,4vw,40px)}
+.visit-card h3{color:#fff}
+.hours-row{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:.97rem}
+.hours-row:last-child{border-bottom:0}.hours-row b{font-weight:700}
+.cta-final{background:var(--clay);color:#fff;border-radius:var(--r);padding:clamp(40px,6vw,72px);text-align:center}
+.cta-final h2{color:#fff}.cta-final p{color:rgba(255,255,255,.92);max-width:48ch;margin:0 auto 22px}
+
+.ftr{background:var(--forest);color:rgba(255,255,255,.78);padding:70px 0 0}
+.ftr-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px;padding-bottom:46px}
+.ftr .brand{color:#fff;margin-bottom:14px}
+.ftr p{font-size:.94rem;max-width:34ch}
+.ftr h4{font-family:var(--body);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sage);margin:0 0 16px}
+.ftr ul{list-style:none;padding:0;margin:0;display:grid;gap:10px;font-size:.94rem}
+.ftr a:hover{color:var(--sage)}
+.badges{font-size:.86rem;line-height:1.9;color:rgba(255,255,255,.62);margin-top:14px}
+.socials{display:flex;gap:12px;margin-top:18px}
+.socials a{width:40px;height:40px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.22);border-radius:50%;color:#fff}
+.socials a:hover{background:var(--emerald);border-color:var(--emerald)}
+.socials svg{width:19px;height:19px}
+.ftr-bar{border-top:1px solid rgba(255,255,255,.12);padding:20px 0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:.85rem}
+.ftr-bar .credit a{color:var(--sage);font-weight:600}
+
+#cl{position:fixed;right:20px;bottom:20px;z-index:80;width:62px;height:62px;border-radius:50%;border:0;cursor:pointer;background:var(--emerald);color:#fff;box-shadow:var(--shadow-lg);display:grid;place-items:center;transition:transform .2s}
+#cl:hover{transform:scale(1.07)}#cl svg{width:28px;height:28px}
+#cp{position:fixed;right:20px;bottom:94px;z-index:81;width:min(372px,calc(100vw - 32px));height:min(560px,calc(100vh - 130px));background:var(--paper);border-radius:var(--r);box-shadow:var(--shadow-lg);display:none;flex-direction:column;overflow:hidden;border:1px solid var(--sage-line)}
+#cp.open{display:flex}
+.ch{background:var(--forest);color:#fff;padding:16px 18px;display:flex;align-items:center;gap:12px}
+.ch .av{width:40px;height:40px;border-radius:50%;background:var(--emerald);display:grid;place-items:center;flex:0 0 auto}
+.ch .av svg{width:22px;height:22px}.ch b{font-family:var(--display);font-size:1.2rem;display:block;line-height:1}
+.ch small{color:var(--sage);font-size:.78rem}.ch .x{margin-left:auto;background:none;border:0;color:rgba(255,255,255,.8);cursor:pointer;padding:4px}
+.ch .x svg{width:22px;height:22px}
+.clog{flex:1;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:11px;background:var(--cream)}
+.m{max-width:84%;padding:11px 14px;border-radius:14px;font-size:.95rem;line-height:1.5}
+.m.bot{background:var(--paper);border:1px solid var(--sage-line);border-bottom-left-radius:4px;align-self:flex-start}
+.m.me{background:var(--emerald);color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
+.m.bot a{color:var(--clay);font-weight:600;text-decoration:underline}
+.chips{display:flex;flex-wrap:wrap;gap:7px;padding:0 18px 12px;background:var(--cream)}
+.chips button{background:var(--paper);border:1px solid var(--sage-line);color:var(--forest);border-radius:999px;padding:7px 12px;font-size:.82rem;font-weight:600;cursor:pointer}
+.chips button:hover{background:var(--sage)}
+.cin{display:flex;gap:8px;padding:12px;border-top:1px solid var(--sage-line);background:var(--paper)}
+.cin input{flex:1;border:1.5px solid var(--sage-line);border-radius:999px;padding:11px 16px;min-height:44px}
+.cin input:focus{outline:0;border-color:var(--emerald)}
+.cin button{width:44px;height:44px;flex:0 0 auto;border:0;border-radius:50%;background:var(--emerald);color:#fff;cursor:pointer;display:grid;place-items:center}
+.cin button svg{width:20px;height:20px}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+.hero h1,.hero .sub,.hero-cta,.awards{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+.hero .sub{animation-delay:.12s}.hero-cta{animation-delay:.24s}.awards{animation-delay:.36s}
+@keyframes rise{from{transform:translateY(26px)}to{opacity:1;transform:none}}
+
+@media(max-width:940px){
+  .nav-links{display:none}.nav-links.open{display:flex;flex-direction:column;gap:0;position:absolute;left:0;right:0;top:100%;background:var(--forest-2);padding:8px 22px 18px}
+  .nav-links.open a{padding:13px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+  .nav-toggle{display:block}
+  .grid,.reviews{grid-template-columns:1fr 1fr}
+  .feature,.feature.flip .feat-media,.visit,.ftr-top{grid-template-columns:1fr}
+  .feature.flip .feat-media{order:0}
+  .ftr-top{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .grid,.reviews,.ftr-top{grid-template-columns:1fr}
+  h1{font-size:clamp(2.6rem,12vw,3.6rem)}
+}
+@media(prefers-reduced-motion:reduce){.reveal,.hero h1,.hero .sub,.hero-cta,.awards{opacity:1;transform:none;animation:none}}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <img class="brand-logo" src="images/logo.webp" alt="Green Thumb Landscaping and Garden Center logo" width="42" height="42">
+      Green Thumb
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#garden">Garden Center</a>
+      <a href="#landscaping">Landscaping</a>
+      <a href="#offerings">What We Grow</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-green" href="https://shop.greenthumbinc.biz/" rel="noopener">Shop Now</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-media">
+      <img src="images/hero.jpg" alt="Lush manicured garden with pond and layered plantings by Green Thumb" fetchpriority="high">
+    </div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow on">Dubois County's Oldest Florist &amp; Garden Center · Jasper, IN</p>
+      <h1>Where green thumbs meet <span class="it">modern vibes.</span></h1>
+      <p class="sub">Voted 'Best in Dubois County' for our floral work in 2019, 2020 &amp; 2023. Visit our Jasper garden center and let's grow something amazing together.</p>
+      <div class="hero-cta">
+        <a class="btn btn-clay btn-lg" href="#visit">Visit the Garden Center</a>
+        <a class="btn btn-ghost btn-lg" href="https://shop.greenthumbinc.biz/" rel="noopener">Shop Now</a>
+      </div>
+      <div class="awards">
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21.4 8 14 2 9.4h7.6Z"/></svg> Best in Dubois County · Floral '19 '20 '23</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21.4 8 14 2 9.4h7.6Z"/></svg> Best Landscaping '22</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Master Nursery Garden Center</span>
+      </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" fill="currentColor"><path d="M0 80h1440V36c-180 36-420 36-720 8C420 16 180 16 0 44Z"/></svg>
+    </div>
+  </section>
+
+  <!-- GARDEN CENTER (JASPER) -->
+  <section class="section" id="garden" style="padding-top:clamp(40px,6vw,80px)">
+    <div class="wrap feature">
+      <div class="feat-media reveal"><img src="images/garden-center.jpg" alt="Vibrant blooms inside the Jasper garden center and florist greenhouse"></div>
+      <div class="reveal">
+        <p class="eyebrow">Jasper · Garden Center &amp; Florist</p>
+        <h2>Dubois County's Oldest Florist &amp; Garden Center in Jasper, IN</h2>
+        <div class="prose">
+          <p>Welcome to our Jasper garden center where green thumbs meet modern vibes! We are not your typical garden center. We blend the timeless joy of gardening with a fresh, young-at-heart approach that speaks to today's plant enthusiasts. Whether you're a seasoned gardener or just discovering your love for all things green, we're here to inspire and empower you on your botanical journey.</p>
+          <p>Our passion for plants goes beyond just selling them. We curate a handpicked selection of the trendiest plants and gardening accessories to turn your space into an urban jungle that's as stylish as it is soothing. From succulents to statement houseplants, each one is chosen with care to bring a touch of nature's beauty into your life.</p>
+          <p>But we're more than just a full service garden center — we are a gift shop &amp; create unique floral arrangements. Whether you're looking for expert advice or DIY planting tips, our friendly team is here to support you every step of the way.</p>
+        </div>
+        <a class="btn btn-clay" href="tel:+18124823338" style="margin-top:8px">Call Our Garden Center · (812) 482-3338</a>
+      </div>
+    </div>
+    <div class="wrap narrow prose reveal" style="margin-top:clamp(40px,5vw,64px)">
+      <p>Our primary Garden Center, located at 702 3rd Avenue in Jasper, is a treasure trove of delights for garden enthusiasts. In addition to our landscaping offerings, our Jasper location is home to a charming gift shop and florist department. From beautiful floral arrangements for all occasions to unique gifts that delight your loved ones, we have something for everyone. Need to spruce up your garden? Look no further — we offer a wide selection of plants, seeds, fertilizers, chemicals, and soils to help your garden thrive. Explore our collection of trees, shrubs, perennials, and blooming annual flowers, and don't miss out on our fresh-cut Christmas trees in December. Whether you're celebrating a special occasion or simply looking to beautify your outdoor space, Green Thumb Jasper is your destination of choice.</p>
+    </div>
+  </section>
+
+  <!-- LANDSCAPING (ST. ANTHONY) -->
+  <section class="section band-forest" id="landscaping">
+    <div class="wrap feature flip">
+      <div class="feat-media reveal"><img src="images/landscaping.jpg" alt="Professionally landscaped grounds with shaped shrubs and pathways by Green Thumb's St. Anthony team"></div>
+      <div class="reveal">
+        <p class="eyebrow on">St. Anthony · Landscaping &amp; Materials</p>
+        <h2 style="color:#fff">Dubois County's Most Trusted Landscaping Company in St. Anthony, IN</h2>
+        <div class="prose">
+          <p>Voted 'Best in Dubois County' in 2022 for our landscaping design and build services. Welcome to the landscaping side of Green Thumb, where landscaping meets lifestyle in the most vibrant way possible!</p>
+          <p>At our St. Anthony landscaping division we're not just about creating beautiful outdoor spaces – we're redefining what it means to love where you live. Our team of passionate landscapers and designers are here to turn your outdoor dreams into reality, all while keeping things fresh and contemporary.</p>
+          <p>Whether you're looking to transform your backyard into an oasis of calm or create a lively urban garden on your rooftop, we've got the expertise and the enthusiasm to make it happen. We specialize in crafting spaces that not only look stunning but also reflect your unique personality and style.</p>
+          <p>Are you a do-it-yourself kind of person? Then the St. Anthony location of Green Thumb has what you need. Our bins are full of mulch, landscaping rock, sand to help the weekend warrior in you. Visit to view our landscaping plants, boulder selection and hardscape products.</p>
+          <p>But it's not just about the products – it's about the people. We're a community of like-minded individuals who share a passion for green spaces and a zest for life. Whether you're a seasoned gardener or a newbie with a vision, we're here to support you every step of the way with expert advice, creative ideas, and a whole lot of enthusiasm.</p>
+        </div>
+        <a class="btn btn-clay" href="tel:+18123262414" style="margin-top:8px">Call Our Landscaping Location · (812) 326-2414</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFERINGS -->
+  <section class="section band-sage" id="offerings">
+    <div class="wrap">
+      <div class="s-head reveal">
+        <p class="eyebrow">What we grow</p>
+        <h2>From a single succulent to your <span class="it">whole yard.</span></h2>
+      </div>
+      <div class="grid">
+        <article class="card reveal"><div class="ph"><img src="images/succulents.jpg" alt="Cluster of green rosette succulents"></div><div class="card-body"><h3>Houseplants &amp; Succulents</h3><p>A handpicked selection of the trendiest plants and gardening accessories — from succulents to statement houseplants — to turn your space into an urban jungle.</p></div></article>
+        <article class="card reveal"><div class="ph"><img src="images/flowers.jpg" alt="Fresh daisies in bloom"></div><div class="card-body"><h3>Florist &amp; Gift Shop</h3><p>Award-winning, unique floral arrangements for all occasions, plus a charming gift shop full of things your loved ones will delight in.</p></div></article>
+        <article class="card reveal"><div class="ph"><img src="images/planting-beds.jpg" alt="Lush planting bed with perennials, foliage and blooms"></div><div class="card-body"><h3>Trees, Shrubs &amp; Perennials</h3><p>A wide selection of trees, shrubs, perennials and blooming annuals, plus seeds, fertilizers, chemicals and soils to help your garden thrive.</p></div></article>
+        <article class="card reveal"><div class="ph"><img src="images/water-feature.jpg" alt="Designed garden water feature with stream and natural stone"></div><div class="card-body"><h3>Landscape Design &amp; Build</h3><p>Our St. Anthony crew turns your outdoor dreams into reality — beautiful, contemporary spaces that reflect your personality and style.</p></div></article>
+        <article class="card reveal"><div class="ph"><img src="images/landscaping.jpg" alt="Landscaped grounds with hardscape, rock and shaped plantings"></div><div class="card-body"><h3>Bulk Mulch, Rock &amp; Boulders</h3><p>Bins full of mulch, landscaping rock and sand for the weekend warrior in you — plus our boulder selection and hardscape products.</p></div></article>
+        <article class="card reveal"><div class="ph"><img src="images/greenhouse.jpg" alt="Rows of seasonal plants and greenery in the greenhouse"></div><div class="card-body"><h3>Seasonal &amp; Christmas Trees</h3><p>Blooming annual flowers in season and fresh-cut Christmas trees in December. There's always a reason to stop in.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="section band-sage" style="padding:clamp(36px,4vw,56px) 0">
+    <div class="wrap trust reveal">
+      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21.4 8 14 2 9.4h7.6Z"/></svg><b>Best in Dubois County</b></span>
+      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.52-4.78 10-10 10Z"/></svg><b>Master Nursery Garden Centers</b></span>
+      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/></svg><b>Licensed &amp; Insured</b></span>
+      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg><b>Jasper Chamber of Commerce</b></span>
+      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 3l9 6M5 10v9h14v-9"/></svg><b>Downtown Merchants Association</b></span>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section band-forest" id="reviews">
+    <div class="wrap">
+      <div class="s-head center reveal">
+        <p class="eyebrow on">Loved by the neighborhood</p>
+        <h2 style="color:#fff">Kind words from <span class="it">happy growers.</span></h2>
+      </div>
+      <div class="reviews">
+        <blockquote class="review reveal"><div class="st">★★★★★</div><p>"I placed an order online and within minutes received a phone call to verify the recipient would be home to get the delivery. The flowers were delivered within an hour and are beautiful!! Thank you to everyone working there! Fantastic job."</p><cite>— Andrea</cite></blockquote>
+        <blockquote class="review reveal"><div class="st">★★★★★</div><p>"I spoke with Natalie and she was super helpful. I was able to order and send a gift to my niece. I live 2 states away and they delivered it the same day. Amazing service and wonderful pricing!"</p><cite>— Erika Wengert</cite></blockquote>
+        <blockquote class="review reveal"><div class="st">★★★★★</div><p>"I wandered in while waiting to conduct business near here. Natalie was truly a lovely woman. Beyond helpful, kind, and patient with me. She offered assistance without me having to ask. I just went in to look around and ended up with 2 boxes of awesome garden decorations and plants. Can't wait to go back!"</p><cite>— Nicole Mercer</cite></blockquote>
+        <blockquote class="review reveal"><div class="st">★★★★★</div><p>"These girls, this place are/is THE BOMB!!! Such friendly service, always smiling, AND the most OUTSTANDING arrangements. 20 stars from me."</p><cite>— Cindy Hassfurther</cite></blockquote>
+        <blockquote class="review reveal"><div class="st">★★★★★</div><p>"Love shopping at Green Thumb any time I get a chance! They have so many great gifts and cute things for the garden and flower beds. I've shopped at both locations — from trees to flowers and bulbs and seeds. They are all so sweet and helpful with any questions."</p><cite>— Jamie Breeding</cite></blockquote>
+        <blockquote class="review reveal"><div class="st">★★★★★</div><p>"They are great to deal with, very professional, competitively priced, and quickly fulfilled and delivered a last-minute order for me that no one else wanted to fulfill! The recipient was very pleased as well. Thank you Green Thumb staff for making a special occasion more special!"</p><cite>— Misty G.</cite></blockquote>
+        <blockquote class="review reveal"><div class="st">★★★★★</div><p>"Employees inside were very nice, talked to us about where everything was, and customer service was exceptional."</p><cite>— Mike W.</cite></blockquote>
+        <blockquote class="review reveal"><div class="st">★★★★★</div><p>"Lovely people and very helpful. Definitely found my favorite flower shop."</p><cite>— Marissa Hall</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEARN MORE / VISIT -->
+  <section class="section" id="visit">
+    <div class="wrap visit">
+      <div class="reveal">
+        <p class="eyebrow">Learn more</p>
+        <h2>Let's grow something <span class="it">amazing together.</span></h2>
+        <p class="lead">Ready to embark on your gardening journey with Green Thumb? Visit us at one of our two locations and experience the difference. Our friendly staff is here to help you turn your outdoor living dreams into reality.</p>
+        <div class="loc-cards" style="margin-top:24px">
+          <div class="loc-card">
+            <span class="tag">Jasper · Garden Center &amp; Florist</span>
+            <h3>702 3rd Ave, Jasper, IN 47546</h3>
+            <p>Plants, florals, gifts &amp; garden supplies.</p>
+            <a class="tel" href="tel:+18124823338">(812) 482-3338</a>
+          </div>
+          <div class="loc-card">
+            <span class="tag">St. Anthony · Landscaping &amp; Materials</span>
+            <h3>4495 E. Schnellville Rd, St. Anthony, IN 47575</h3>
+            <p>Design &amp; build, mulch, rock, sand, boulders &amp; hardscape.</p>
+            <a class="tel" href="tel:+18123262414">(812) 326-2414</a>
+          </div>
+        </div>
+      </div>
+      <div class="visit-card reveal">
+        <h3 style="font-size:1.8rem">Business Hours</h3>
+        <div class="hours-row"><span>Monday – Friday</span><b>8:30 AM – 5:30 PM</b></div>
+        <div class="hours-row"><span>Saturday</span><b>8:30 AM – 3:00 PM</b></div>
+        <div class="hours-row"><span>Sunday</span><b>Closed</b></div>
+        <p style="margin:22px 0 0;color:rgba(255,255,255,.82);font-size:.95rem">Email: <a href="mailto:greent2414@yahoo.com" style="color:var(--sage);font-weight:600">greent2414@yahoo.com</a></p>
+        <a class="btn btn-clay" href="https://shop.greenthumbinc.biz/" rel="noopener" style="margin-top:22px;width:100%">Shop Online</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap"><div class="cta-final reveal">
+      <p class="eyebrow on" style="justify-content:center;color:#fff">We're here to help</p>
+      <h2>Contact us, we are here to help!</h2>
+      <p>Stop by either location, call ahead, or shop online. Let's grow something amazing together.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-lg" style="background:#fff;color:var(--clay)" href="tel:+18124823338">Call Jasper · (812) 482-3338</a>
+        <a class="btn btn-lg btn-ghost" href="tel:+18123262414">Call St. Anthony · (812) 326-2414</a>
+      </div>
+    </div></div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <div>
+        <a class="brand" href="#top"><img class="brand-logo" src="images/logo.webp" alt="Green Thumb logo" width="42" height="42"> Green Thumb</a>
+        <p>Green Thumb Landscaping and Garden Center — Dubois County's oldest florist &amp; garden center and most trusted landscaping company.</p>
+        <div class="badges">Licensed and insured<br>Master Nursery Garden Centers<br>Jasper Chamber of Commerce<br>Jasper Downtown Merchants Association</div>
+        <div class="socials">
+          <a href="https://facebook.com/greentgardencenter/" aria-label="Facebook" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2 0-3 1.3-3 3.2V12H8v3h3v7h3v-7h2.5l.5-3H14V9.7c0-.5.3-.7.8-.7Z"/></svg></a>
+          <a href="https://instagram.com/greenthumbgardencenter/" aria-label="Instagram" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@greenthumbjasper" aria-label="TikTok" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2 1.6 3.6 3.6 3.9v3c-1.4 0-2.7-.4-3.6-1v6.1A6 6 0 1 1 10 9.2v3.1a3 3 0 1 0 3 2.9V3Z"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Quick Links</h4><ul><li><a href="#top">Home</a></li><li><a href="#garden">Garden Center</a></li><li><a href="#landscaping">Landscaping</a></li><li><a href="#offerings">What We Grow</a></li><li><a href="https://shop.greenthumbinc.biz/" rel="noopener">Shop Now</a></li></ul></div>
+      <div><h4>Jasper Location</h4><ul><li>702 3rd Ave<br>Jasper, IN 47546</li><li>Phone: <a href="tel:+18124823338">(812) 482-3338</a></li><li>Garden Center &amp; Florist</li></ul></div>
+      <div><h4>Schnellville Location</h4><ul><li>4495 E. Schnellville Rd<br>St. Anthony, IN 47575</li><li>Other Phone: <a href="tel:+18123262414">(812) 326-2414</a></li><li>Landscaping &amp; Materials</li></ul></div>
+    </div>
+    <div class="ftr-bar">
+      <span>© <span id="yr"></span> Green Thumb Landscaping and Garden Center · Jasper &amp; St. Anthony, Indiana</span>
+      <span class="credit">Site by <a href="#" rel="noopener">A Light in the Sky</a></span>
+    </div>
+  </div>
+</footer>
+
+<button id="cl" aria-label="Chat with Green Thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></button>
+<div id="cp" role="dialog" aria-label="Green Thumb assistant">
+  <div class="ch"><span class="av"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.52-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></span><span><b>Green Thumb</b><small>Plant &amp; garden helper</small></span><button class="x" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+  <div class="clog" id="clog" aria-live="polite"></div>
+  <div class="chips" id="chips"></div>
+  <form class="cin" id="cform"><input id="ctext" autocomplete="off" placeholder="Ask about plants, florals, hours…" aria-label="Message"><button type="submit" aria-label="Send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></button></form>
+</div>
+
+<script>
+document.getElementById("yr").textContent=new Date().getFullYear();
+var tg=document.querySelector(".nav-toggle"),lk=document.querySelector(".nav-links");
+tg.addEventListener("click",function(){var o=lk.classList.toggle("open");tg.setAttribute("aria-expanded",o)});
+lk.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){lk.classList.remove("open")})});
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(function(n){io.observe(n)});
+var KB=[
+ {k:["hour","open","when","time","close","sunday","saturday"],a:"We're open Mon–Fri 8:30 AM–5:30 PM and Sat 8:30 AM–3:00 PM. Closed Sundays."},
+ {k:["where","location","address","jasper","anthony","schnellville","direction"],a:"Two locations! Garden center &amp; florist at 702 3rd Ave, Jasper. Landscaping &amp; materials at 4495 E. Schnellville Rd, St. Anthony."},
+ {k:["flower","floral","arrangement","bouquet","delivery","gift","funeral","wedding"],a:"Our award-winning florist creates unique arrangements for all occasions, with same-day local delivery. Call the Jasper shop at <a href='tel:+18124823338'>(812) 482-3338</a> or <a href='https://shop.greenthumbinc.biz/'>order online</a>."},
+ {k:["plant","houseplant","succulent","indoor","tropical","pot"],a:"We carry a handpicked selection of trendy houseplants, succulents and statement greenery. Visit the Jasper garden center or browse the <a href='https://shop.greenthumbinc.biz/'>online shop</a>."},
+ {k:["tree","shrub","perennial","annual","seed","soil","fertilizer","chemical","christmas"],a:"Trees, shrubs, perennials, blooming annuals, seeds, fertilizers, chemicals and soils — plus fresh-cut Christmas trees in December. We're a Master Nursery Garden Center."},
+ {k:["landscap","design","build","backyard","patio","hardscape","oasis"],a:"Our St. Anthony team does full landscape design &amp; build — voted Best in Dubois County in 2022. Call <a href='tel:+18123262414'>(812) 326-2414</a> to talk through your project."},
+ {k:["mulch","rock","sand","boulder","bulk","material","stone"],a:"Our St. Anthony yard has bulk mulch, landscaping rock, sand, boulders and hardscape products for the weekend warrior in you. Call <a href='tel:+18123262414'>(812) 326-2414</a>."},
+ {k:["shop","online","buy","order","pickup","website"],a:"Shop plants and gifts anytime at <a href='https://shop.greenthumbinc.biz/'>shop.greenthumbinc.biz</a>."},
+ {k:["phone","call","contact","number","email"],a:"Jasper garden center: <a href='tel:+18124823338'>(812) 482-3338</a>. St. Anthony landscaping: <a href='tel:+18123262414'>(812) 326-2414</a>. Email greent2414@yahoo.com."}
+];
+var FB="Happy to help! Reach the Jasper garden center at <a href='tel:+18124823338'>(812) 482-3338</a> or the St. Anthony landscaping office at <a href='tel:+18123262414'>(812) 326-2414</a> — or <a href='https://shop.greenthumbinc.biz/'>shop online</a>. What are you looking for?";
+var cp=document.getElementById("cp"),cl=document.getElementById("cl"),clog=document.getElementById("clog"),ctext=document.getElementById("ctext"),chips=document.getElementById("chips"),opened=false;
+function add(c,h){var m=document.createElement("div");m.className="m "+c;m.innerHTML=h;clog.appendChild(m);clog.scrollTop=clog.scrollHeight}
+function esc(s){return /<a /.test(s)?s:s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+function ans(t){var q=t.toLowerCase(),b=null,bs=0;KB.forEach(function(i){var s=0;i.k.forEach(function(k){if(q.indexOf(k)!==-1)s+=k.length});if(s>bs){bs=s;b=i}});return b?b.a:FB}
+function send(t){add("me",esc(t));ctext.value="";setTimeout(function(){add("bot",ans(t))},260)}
+cl.addEventListener("click",function(){var o=cp.classList.toggle("open");cl.style.transform=o?"scale(.9)":"";if(o&&!opened){opened=true;add("bot","Hi! I'm the Green Thumb helper. Ask me about plants, florals, landscaping, hours or our two locations. 🌱");ctext.focus()}});
+document.querySelector(".ch .x").addEventListener("click",function(){cp.classList.remove("open");cl.style.transform=""});
+document.getElementById("cform").addEventListener("submit",function(e){e.preventDefault();var v=ctext.value.trim();if(v)send(v)});
+["Fresh flowers","Houseplants","Landscaping","Hours & location"].forEach(function(t){var b=document.createElement("button");b.textContent=t;b.addEventListener("click",function(){send(t)});chips.appendChild(b)});
+</script>
+</body>
+</html>
