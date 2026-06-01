@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Green Thumb Landscaping &amp; Garden Center | Jasper &amp; St. Anthony, IN</title>
-<meta name="description" content="Dubois County's oldest florist & garden center and most trusted landscaping company. For all your garden and landscape needs in St. Anthony and Jasper, IN, call (812) 482-3338 or (812) 326-2414.">
+<title>Fresh Flowers &amp; Gifts | Green Thumb Florist, Jasper IN</title>
+<meta name="description" content="Shop fresh flowers from Green Thumb, Dubois County's award-winning florist in Jasper, IN. Roses, birthday bouquets, sympathy arrangements and gifts with daily local delivery. Growing our own since 1976.">
 <meta name="theme-color" content="#101218">
 <link rel="icon" type="image/webp" href="images/logo.webp">
 <link rel="apple-touch-icon" href="images/logo.webp">
@@ -206,17 +206,16 @@ p{margin:0 0 1rem}
 
 <header class="hdr">
   <div class="wrap nav">
-    <a class="brand" href="#top">
+    <a class="brand" href="index.html">
       <img class="brand-logo" src="images/logo.webp" alt="Green Thumb Landscaping and Garden Center logo" width="42" height="42">
       Green Thumb
     </a>
     <nav class="nav-links" aria-label="Primary">
-      <a href="#garden">Garden Center</a>
-      <a href="flowers.html">Flowers</a>
-      <a href="#landscaping">Landscaping</a>
-      <a href="#offerings">What We Grow</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#visit">Visit</a>
+      <a href="index.html#garden">Garden Center</a>
+      <a href="flowers.html" aria-current="page">Flowers</a>
+      <a href="index.html#landscaping">Landscaping</a>
+      <a href="index.html#offerings">What We Grow</a>
+      <a href="index.html#visit">Visit</a>
     </nav>
     <div class="nav-actions">
       <a class="btn btn-green" href="https://shop.greenthumbinc.biz/" rel="noopener">Shop Now</a>
@@ -225,171 +224,170 @@ p{margin:0 0 1rem}
   </div>
 </header>
 
-<main id="top">
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-media">
-      <img src="images/hero.jpg" alt="Lush manicured garden with pond and layered plantings by Green Thumb" fetchpriority="high">
-    </div>
-    <div class="wrap hero-inner">
-      <p class="eyebrow on">Dubois County's Oldest Florist &amp; Garden Center · Jasper, IN</p>
-      <h1>Where green thumbs meet <span class="it">modern vibes.</span></h1>
-      <p class="sub">Voted 'Best in Dubois County' for our floral work in 2019, 2020 &amp; 2023. Visit our Jasper garden center and let's grow something amazing together.</p>
-      <div class="hero-cta">
-        <a class="btn btn-clay btn-lg" href="#visit">Visit the Garden Center</a>
-        <a class="btn btn-ghost btn-lg" href="https://shop.greenthumbinc.biz/" rel="noopener">Shop Now</a>
-      </div>
-      <div class="awards">
-        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21.4 8 14 2 9.4h7.6Z"/></svg> Best in Dubois County · Floral '19 '20 '23</span>
-        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21.4 8 14 2 9.4h7.6Z"/></svg> Best Landscaping '22</span>
-        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Master Nursery Garden Center</span>
-      </div>
-    </div>
-    <div class="hero-wave" aria-hidden="true">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" fill="currentColor"><path d="M0 80h1440V36c-180 36-420 36-720 8C420 16 180 16 0 44Z"/></svg>
-    </div>
-  </section>
+<main>
+<style>
+.shopfilter{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:0 0 38px}
+.shopfilter button{background:var(--paper);border:1.5px solid var(--sage-line);color:var(--forest);border-radius:999px;padding:10px 19px;font-weight:700;font-size:.86rem;cursor:pointer;font-family:var(--body);transition:background .15s,border-color .15s,color .15s}
+.shopfilter button:hover{border-color:var(--emerald);color:var(--emerald)}
+.shopfilter button.on{background:var(--emerald);border-color:var(--emerald);color:#fff}
+.shop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.shop-grid .card-body{padding:20px 22px 24px}
+.shop-grid .card-body h3{font-size:1.28rem}
+.shop-grid .card-body p{font-size:.92rem;min-height:2.4em}
+.pricerow{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px}
+.pricerow .price{font-family:var(--display);font-size:1.5rem;color:var(--forest);line-height:1}
+.pricerow .btn{min-height:42px;padding:0 18px;font-size:.9rem}
+.varynote{font-size:.74rem;color:var(--muted);font-style:italic;margin:.5em 0 0}
+@media(max-width:940px){.shop-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.shop-grid{grid-template-columns:1fr 1fr;gap:12px}.shop-grid .card-body{padding:16px}}
+</style>
 
-  <!-- GARDEN CENTER (JASPER) -->
-  <section class="section" id="garden" style="padding-top:clamp(40px,6vw,80px)">
-    <div class="wrap feature">
-      <div class="feat-media reveal"><img src="images/garden-center.jpg" alt="Vibrant blooms inside the Jasper garden center and florist greenhouse"></div>
-      <div class="reveal">
-        <p class="eyebrow">Jasper · Garden Center &amp; Florist</p>
-        <h2>Dubois County's Oldest Florist &amp; Garden Center in Jasper, IN</h2>
-        <div class="prose">
-          <p>Welcome to our Jasper garden center where green thumbs meet modern vibes! We are not your typical garden center. We blend the timeless joy of gardening with a fresh, young-at-heart approach that speaks to today's plant enthusiasts. Whether you're a seasoned gardener or just discovering your love for all things green, we're here to inspire and empower you on your botanical journey.</p>
-          <p>Our passion for plants goes beyond just selling them. We curate a handpicked selection of the trendiest plants and gardening accessories to turn your space into an urban jungle that's as stylish as it is soothing. From succulents to statement houseplants, each one is chosen with care to bring a touch of nature's beauty into your life.</p>
-          <p>But we're more than just a full service garden center — we are a gift shop &amp; create unique floral arrangements. Whether you're looking for expert advice or DIY planting tips, our friendly team is here to support you every step of the way.</p>
-        </div>
-        <a class="btn btn-clay" href="tel:+18124823338" style="margin-top:8px">Call Our Garden Center · (812) 482-3338</a>
-      </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-media"><img src="images/planting-beds.jpg" alt="Fresh, vibrant blooms at the Green Thumb florist in Jasper, Indiana" fetchpriority="high"></div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow on">Green Thumb Florist · Jasper, IN · Since 1976</p>
+    <h1>Fresh flowers, <span class="it">arranged by hand.</span></h1>
+    <p class="sub">Award-winning arrangements for every occasion — designed in our Jasper shop, delivered fresh across Dubois County, daily.</p>
+    <div class="hero-cta">
+      <a class="btn btn-clay btn-lg" href="https://shop.greenthumbinc.biz/" rel="noopener">Shop All Flowers</a>
+      <a class="btn btn-ghost btn-lg" href="tel:+18124823338">Call (812) 482-3338</a>
     </div>
-    <div class="wrap narrow prose reveal" style="margin-top:clamp(40px,5vw,64px)">
-      <p>Our primary Garden Center, located at 702 3rd Avenue in Jasper, is a treasure trove of delights for garden enthusiasts. In addition to our landscaping offerings, our Jasper location is home to a charming gift shop and florist department. From beautiful floral arrangements for all occasions to unique gifts that delight your loved ones, we have something for everyone. Need to spruce up your garden? Look no further — we offer a wide selection of plants, seeds, fertilizers, chemicals, and soils to help your garden thrive. Explore our collection of trees, shrubs, perennials, and blooming annual flowers, and don't miss out on our fresh-cut Christmas trees in December. Whether you're celebrating a special occasion or simply looking to beautify your outdoor space, Green Thumb Jasper is your destination of choice.</p>
+    <div class="awards">
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21.4 8 14 2 9.4h7.6Z"/></svg> Best in Dubois County · Floral '19 '20 '23</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg> Daily Fresh Delivery</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.52-4.78 10-10 10Z"/></svg> Growing our own since 1976</span>
     </div>
-  </section>
+  </div>
+  <div class="hero-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" fill="currentColor"><path d="M0 80h1440V36c-180 36-420 36-720 8C420 16 180 16 0 44Z"/></svg>
+  </div>
+</section>
 
-  <!-- LANDSCAPING (ST. ANTHONY) -->
-  <section class="section band-forest" id="landscaping">
-    <div class="wrap feature flip">
-      <div class="feat-media reveal"><img src="images/landscaping.jpg" alt="Professionally landscaped grounds with shaped shrubs and pathways by Green Thumb's St. Anthony team"></div>
-      <div class="reveal">
-        <p class="eyebrow on">St. Anthony · Landscaping &amp; Materials</p>
-        <h2 style="color:#fff">Dubois County's Most Trusted Landscaping Company in St. Anthony, IN</h2>
-        <div class="prose">
-          <p>Voted 'Best in Dubois County' in 2022 for our landscaping design and build services. Welcome to the landscaping side of Green Thumb, where landscaping meets lifestyle in the most vibrant way possible!</p>
-          <p>At our St. Anthony landscaping division we're not just about creating beautiful outdoor spaces – we're redefining what it means to love where you live. Our team of passionate landscapers and designers are here to turn your outdoor dreams into reality, all while keeping things fresh and contemporary.</p>
-          <p>Whether you're looking to transform your backyard into an oasis of calm or create a lively urban garden on your rooftop, we've got the expertise and the enthusiasm to make it happen. We specialize in crafting spaces that not only look stunning but also reflect your unique personality and style.</p>
-          <p>Are you a do-it-yourself kind of person? Then the St. Anthony location of Green Thumb has what you need. Our bins are full of mulch, landscaping rock, sand to help the weekend warrior in you. Visit to view our landscaping plants, boulder selection and hardscape products.</p>
-          <p>But it's not just about the products – it's about the people. We're a community of like-minded individuals who share a passion for green spaces and a zest for life. Whether you're a seasoned gardener or a newbie with a vision, we're here to support you every step of the way with expert advice, creative ideas, and a whole lot of enthusiasm.</p>
-        </div>
-        <a class="btn btn-clay" href="tel:+18123262414" style="margin-top:8px">Call Our Landscaping Location · (812) 326-2414</a>
-      </div>
+<!-- SHOP GRID -->
+<section class="section" id="shop" style="padding-top:clamp(40px,6vw,80px)">
+  <div class="wrap">
+    <div class="s-head center reveal">
+      <p class="eyebrow">Shop our arrangements</p>
+      <h2>Find the <span class="it">perfect bouquet.</span></h2>
+      <p class="lead" style="margin-inline:auto">Order online for secure checkout and same-day local delivery — or call the shop and we'll design something special just for you.</p>
     </div>
-  </section>
 
-  <!-- OFFERINGS -->
-  <section class="section band-sage" id="offerings">
-    <div class="wrap">
-      <div class="s-head reveal">
-        <p class="eyebrow">What we grow</p>
-        <h2>From a single succulent to your <span class="it">whole yard.</span></h2>
-      </div>
-      <div class="grid">
-        <article class="card reveal"><div class="ph"><img src="images/succulents.jpg" alt="Cluster of green rosette succulents"></div><div class="card-body"><h3>Houseplants &amp; Succulents</h3><p>A handpicked selection of the trendiest plants and gardening accessories — from succulents to statement houseplants — to turn your space into an urban jungle.</p></div></article>
-        <article class="card reveal"><a href="flowers.html" style="color:inherit;display:block"><div class="ph"><img src="images/flowers.jpg" alt="Fresh daisies in bloom"></div><div class="card-body"><h3>Florist &amp; Gift Shop</h3><p>Award-winning, unique floral arrangements for all occasions, plus a charming gift shop full of things your loved ones will delight in.</p><p style="color:var(--emerald);font-weight:700;font-size:.9rem;margin-top:14px">Shop our flowers &raquo;</p></div></a></article>
-        <article class="card reveal"><div class="ph"><img src="images/planting-beds.jpg" alt="Lush planting bed with perennials, foliage and blooms"></div><div class="card-body"><h3>Trees, Shrubs &amp; Perennials</h3><p>A wide selection of trees, shrubs, perennials and blooming annuals, plus seeds, fertilizers, chemicals and soils to help your garden thrive.</p></div></article>
-        <article class="card reveal"><div class="ph"><img src="images/water-feature.jpg" alt="Designed garden water feature with stream and natural stone"></div><div class="card-body"><h3>Landscape Design &amp; Build</h3><p>Our St. Anthony crew turns your outdoor dreams into reality — beautiful, contemporary spaces that reflect your personality and style.</p></div></article>
-        <article class="card reveal"><div class="ph"><img src="images/landscaping.jpg" alt="Landscaped grounds with hardscape, rock and shaped plantings"></div><div class="card-body"><h3>Bulk Mulch, Rock &amp; Boulders</h3><p>Bins full of mulch, landscaping rock and sand for the weekend warrior in you — plus our boulder selection and hardscape products.</p></div></article>
-        <article class="card reveal"><div class="ph"><img src="images/greenhouse.jpg" alt="Rows of seasonal plants and greenery in the greenhouse"></div><div class="card-body"><h3>Seasonal &amp; Christmas Trees</h3><p>Blooming annual flowers in season and fresh-cut Christmas trees in December. There's always a reason to stop in.</p></div></article>
-      </div>
+    <div class="shopfilter" id="shopfilter" role="tablist" aria-label="Filter arrangements">
+      <button data-f="all" class="on">All</button>
+      <button data-f="roses">Roses</button>
+      <button data-f="occasions">Occasions</button>
+      <button data-f="gifts">Gifts &amp; Plants</button>
     </div>
-  </section>
 
-  <!-- TRUST -->
-  <section class="section band-sage" style="padding:clamp(36px,4vw,56px) 0">
-    <div class="wrap trust reveal">
-      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21.4 8 14 2 9.4h7.6Z"/></svg><b>Best in Dubois County</b></span>
-      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.52-4.78 10-10 10Z"/></svg><b>Master Nursery Garden Centers</b></span>
-      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/></svg><b>Licensed &amp; Insured</b></span>
-      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg><b>Jasper Chamber of Commerce</b></span>
-      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 3l9 6M5 10v9h14v-9"/></svg><b>Downtown Merchants Association</b></span>
+    <div class="grid shop-grid" id="shopgrid">
+      <article class="card reveal" data-cat="roses">
+        <a href="product.html"><div class="ph"><img src="images/product-roses-main.jpg" alt="Half a Classic — half dozen red roses with a red bow"></div></a>
+        <div class="card-body"><h3>Half a Classic</h3><p>Six roses — a timeless classic for any occasion.</p>
+          <div class="pricerow"><span class="price">From $52</span><a class="btn btn-clay" href="product.html">View &raquo;</a></div>
+          <p class="varynote">*Rose color may vary</p></div>
+      </article>
+      <article class="card reveal" data-cat="roses">
+        <a href="https://shop.greenthumbinc.biz/" rel="noopener"><div class="ph"><img src="images/flower-perfect-dozen.jpg" alt="Perfect Dozen — a dozen red roses in a clear vase"></div></a>
+        <div class="card-body"><h3>Perfect Dozen</h3><p>A full dozen roses for when only the classic will do.</p>
+          <div class="pricerow"><span class="price">From $85</span><a class="btn btn-clay" href="https://shop.greenthumbinc.biz/" rel="noopener">Order</a></div>
+          <p class="varynote">*Rose color may vary</p></div>
+      </article>
+      <article class="card reveal" data-cat="roses">
+        <a href="https://shop.greenthumbinc.biz/" rel="noopener"><div class="ph"><img src="images/product-roses-three.jpg" alt="Three of a Kind — three red roses with a hearts ribbon"></div></a>
+        <div class="card-body"><h3>Three of a Kind</h3><p>Three roses with a sweet accent — small, simple, heartfelt.</p>
+          <div class="pricerow"><span class="price">From $30</span><a class="btn btn-clay" href="https://shop.greenthumbinc.biz/" rel="noopener">Order</a></div>
+          <p class="varynote">*Rose color may vary</p></div>
+      </article>
+      <article class="card reveal" data-cat="occasions">
+        <a href="https://shop.greenthumbinc.biz/" rel="noopener"><div class="ph"><img src="images/flower-sweetest.jpg" alt="Sweetest Memories — a soft seasonal bouquet"></div></a>
+        <div class="card-body"><h3>Sweetest Memories</h3><p>A soft, romantic mix of our freshest seasonal blooms.</p>
+          <div class="pricerow"><span class="price">From $65</span><a class="btn btn-clay" href="https://shop.greenthumbinc.biz/" rel="noopener">Order</a></div></div>
+      </article>
+      <article class="card reveal" data-cat="occasions">
+        <a href="https://shop.greenthumbinc.biz/" rel="noopener"><div class="ph"><img src="images/flower-best-medicine.jpg" alt="The Best Medicine — a bright, cheerful arrangement"></div></a>
+        <div class="card-body"><h3>The Best Medicine</h3><p>A bright, cheerful pick-me-up to brighten anyone's day.</p>
+          <div class="pricerow"><span class="price">From $45</span><a class="btn btn-clay" href="https://shop.greenthumbinc.biz/" rel="noopener">Order</a></div></div>
+      </article>
+      <article class="card reveal" data-cat="occasions">
+        <a href="https://shop.greenthumbinc.biz/" rel="noopener"><div class="ph"><img src="images/flower-pretty-pinks.jpg" alt="Pretty in Pinks — a lush pink arrangement"></div></a>
+        <div class="card-body"><h3>Pretty in Pinks</h3><p>Blushing pinks arranged for a little extra sweetness.</p>
+          <div class="pricerow"><span class="price">From $52</span><a class="btn btn-clay" href="https://shop.greenthumbinc.biz/" rel="noopener">Order</a></div></div>
+      </article>
+      <article class="card reveal" data-cat="occasions">
+        <a href="https://shop.greenthumbinc.biz/" rel="noopener"><div class="ph"><img src="images/product-arrangement.jpg" alt="Birthday Stems & Streamers — a festive birthday bouquet"></div></a>
+        <div class="card-body"><h3>Birthday Stems &amp; Streamers</h3><p>A festive birthday mix with a playful ribbon finish.</p>
+          <div class="pricerow"><span class="price">From $45</span><a class="btn btn-clay" href="https://shop.greenthumbinc.biz/" rel="noopener">Order</a></div></div>
+      </article>
+      <article class="card reveal" data-cat="occasions">
+        <a href="https://shop.greenthumbinc.biz/" rel="noopener"><div class="ph"><img src="images/flower-bud-vase.jpg" alt="Birthday Bud Vase — a petite mixed bud vase"></div></a>
+        <div class="card-body"><h3>Birthday Bud Vase</h3><p>A petite bud vase — simple, fresh, and always welcome.</p>
+          <div class="pricerow"><span class="price">From $35</span><a class="btn btn-clay" href="https://shop.greenthumbinc.biz/" rel="noopener">Order</a></div></div>
+      </article>
+      <article class="card reveal" data-cat="occasions">
+        <a href="https://shop.greenthumbinc.biz/" rel="noopener"><div class="ph"><img src="images/flower-wildflowers.jpg" alt="Wildflowers and Willow — a garden-gathered arrangement"></div></a>
+        <div class="card-body"><h3>Wildflowers and Willow</h3><p>A garden-gathered look of wildflowers and willow.</p>
+          <div class="pricerow"><span class="price">From $59</span><a class="btn btn-clay" href="https://shop.greenthumbinc.biz/" rel="noopener">Order</a></div></div>
+      </article>
+      <article class="card reveal" data-cat="occasions">
+        <a href="https://shop.greenthumbinc.biz/" rel="noopener"><div class="ph"><img src="images/flower-sympathy.jpg" alt="Expressions of Sympathy — a graceful white tribute arrangement"></div></a>
+        <div class="card-body"><h3>Expressions of Sympathy</h3><p>A graceful tribute, thoughtfully arranged with care.</p>
+          <div class="pricerow"><span class="price">Call us</span><a class="btn btn-clay" href="tel:+18124823338">Call</a></div></div>
+      </article>
+      <article class="card reveal" data-cat="gifts">
+        <a href="https://shop.greenthumbinc.biz/" rel="noopener"><div class="ph"><img src="images/product-giftcard.jpg" alt="Green Thumb gift card"></div></a>
+        <div class="card-body"><h3>Gift Card</h3><p>Let them choose. Redeemable in-store and online.</p>
+          <div class="pricerow"><span class="price">From $25</span><a class="btn btn-clay" href="https://shop.greenthumbinc.biz/" rel="noopener">Order</a></div></div>
+      </article>
+      <article class="card reveal" data-cat="gifts">
+        <a href="https://shop.greenthumbinc.biz/" rel="noopener"><div class="ph"><img src="images/flower-plush.jpg" alt="Plush animal gift add-on"></div></a>
+        <div class="card-body"><h3>Plush Animal</h3><p>A cuddly plush friend to pair with any arrangement.</p>
+          <div class="pricerow"><span class="price">From $7</span><a class="btn btn-clay" href="https://shop.greenthumbinc.biz/" rel="noopener">Order</a></div></div>
+      </article>
     </div>
-  </section>
 
-  <!-- REVIEWS -->
-  <section class="section band-forest" id="reviews">
-    <div class="wrap">
-      <div class="s-head center reveal">
-        <p class="eyebrow on">Loved by the neighborhood</p>
-        <h2 style="color:#fff">Kind words from <span class="it">happy growers.</span></h2>
-      </div>
-      <div class="reviews">
-        <blockquote class="review reveal"><div class="st">★★★★★</div><p>"I placed an order online and within minutes received a phone call to verify the recipient would be home to get the delivery. The flowers were delivered within an hour and are beautiful!! Thank you to everyone working there! Fantastic job."</p><cite>— Andrea</cite></blockquote>
-        <blockquote class="review reveal"><div class="st">★★★★★</div><p>"I spoke with Natalie and she was super helpful. I was able to order and send a gift to my niece. I live 2 states away and they delivered it the same day. Amazing service and wonderful pricing!"</p><cite>— Erika Wengert</cite></blockquote>
-        <blockquote class="review reveal"><div class="st">★★★★★</div><p>"I wandered in while waiting to conduct business near here. Natalie was truly a lovely woman. Beyond helpful, kind, and patient with me. She offered assistance without me having to ask. I just went in to look around and ended up with 2 boxes of awesome garden decorations and plants. Can't wait to go back!"</p><cite>— Nicole Mercer</cite></blockquote>
-        <blockquote class="review reveal"><div class="st">★★★★★</div><p>"These girls, this place are/is THE BOMB!!! Such friendly service, always smiling, AND the most OUTSTANDING arrangements. 20 stars from me."</p><cite>— Cindy Hassfurther</cite></blockquote>
-        <blockquote class="review reveal"><div class="st">★★★★★</div><p>"Love shopping at Green Thumb any time I get a chance! They have so many great gifts and cute things for the garden and flower beds. I've shopped at both locations — from trees to flowers and bulbs and seeds. They are all so sweet and helpful with any questions."</p><cite>— Jamie Breeding</cite></blockquote>
-        <blockquote class="review reveal"><div class="st">★★★★★</div><p>"They are great to deal with, very professional, competitively priced, and quickly fulfilled and delivered a last-minute order for me that no one else wanted to fulfill! The recipient was very pleased as well. Thank you Green Thumb staff for making a special occasion more special!"</p><cite>— Misty G.</cite></blockquote>
-        <blockquote class="review reveal"><div class="st">★★★★★</div><p>"Employees inside were very nice, talked to us about where everything was, and customer service was exceptional."</p><cite>— Mike W.</cite></blockquote>
-        <blockquote class="review reveal"><div class="st">★★★★★</div><p>"Lovely people and very helpful. Definitely found my favorite flower shop."</p><cite>— Marissa Hall</cite></blockquote>
-      </div>
+    <div style="text-align:center;margin-top:38px"><a class="btn btn-lg btn-outline" href="https://shop.greenthumbinc.biz/" rel="noopener">Shop All Occasions &raquo;</a></div>
+  </div>
+</section>
+
+<!-- DELIVERY -->
+<section class="section band-forest">
+  <div class="wrap feature">
+    <div class="feat-media reveal"><img src="images/flower-wildflowers.jpg" alt="A hand-arranged seasonal bouquet by Green Thumb"></div>
+    <div class="reveal">
+      <p class="eyebrow on">Daily fresh delivery</p>
+      <h2 style="color:#fff">Delivered fresh across <span class="it">Dubois County.</span></h2>
+      <div class="prose"><p>Every arrangement is designed by hand in our Jasper shop and delivered fresh — often the same day. We've grown our own flowers since 1976, so quality starts right at the source.</p></div>
+      <ul class="tick">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Same-day local delivery in Jasper &amp; nearby</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Designer's Choice, or pick your own colors</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Birthdays, sympathy, weddings &amp; every day</li>
+      </ul>
+      <a class="btn btn-clay" href="tel:+18124823338">Call the Florist · (812) 482-3338</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- LEARN MORE / VISIT -->
-  <section class="section" id="visit">
-    <div class="wrap visit">
-      <div class="reveal">
-        <p class="eyebrow">Learn more</p>
-        <h2>Let's grow something <span class="it">amazing together.</span></h2>
-        <p class="lead">Ready to embark on your gardening journey with Green Thumb? Visit us at one of our two locations and experience the difference. Our friendly staff is here to help you turn your outdoor living dreams into reality.</p>
-        <div class="loc-cards" style="margin-top:24px">
-          <div class="loc-card">
-            <span class="tag">Jasper · Garden Center &amp; Florist</span>
-            <h3>702 3rd Ave, Jasper, IN 47546</h3>
-            <p>Plants, florals, gifts &amp; garden supplies.</p>
-            <a class="tel" href="tel:+18124823338">(812) 482-3338</a>
-          </div>
-          <div class="loc-card">
-            <span class="tag">St. Anthony · Landscaping &amp; Materials</span>
-            <h3>4495 E. Schnellville Rd, St. Anthony, IN 47575</h3>
-            <p>Design &amp; build, mulch, rock, sand, boulders &amp; hardscape.</p>
-            <a class="tel" href="tel:+18123262414">(812) 326-2414</a>
-          </div>
-        </div>
-      </div>
-      <div class="visit-card reveal">
-        <h3 style="font-size:1.8rem">Business Hours</h3>
-        <div class="hours-row"><span>Monday – Friday</span><b>8:30 AM – 5:30 PM</b></div>
-        <div class="hours-row"><span>Saturday</span><b>8:30 AM – 3:00 PM</b></div>
-        <div class="hours-row"><span>Sunday</span><b>Closed</b></div>
-        <p style="margin:22px 0 0;color:rgba(255,255,255,.82);font-size:.95rem">Email: <a href="mailto:greent2414@yahoo.com" style="color:var(--sage);font-weight:600">greent2414@yahoo.com</a></p>
-        <a class="btn btn-clay" href="https://shop.greenthumbinc.biz/" rel="noopener" style="margin-top:22px;width:100%">Shop Online</a>
-      </div>
+<!-- FINAL CTA -->
+<section class="section" style="padding-top:0">
+  <div class="wrap"><div class="cta-final reveal">
+    <p class="eyebrow on" style="justify-content:center;color:#fff">Let's make someone's day</p>
+    <h2>Send something beautiful today.</h2>
+    <p>Order online for secure checkout, or call our Jasper shop — we deliver fresh, daily.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-lg" style="background:#fff;color:var(--emerald)" href="https://shop.greenthumbinc.biz/" rel="noopener">Shop Online</a>
+      <a class="btn btn-lg btn-ghost" href="tel:+18124823338">Call (812) 482-3338</a>
     </div>
-  </section>
+  </div></div>
+</section>
 
-  <!-- FINAL CTA -->
-  <section class="section" style="padding-top:0">
-    <div class="wrap"><div class="cta-final reveal">
-      <p class="eyebrow on" style="justify-content:center;color:#fff">We're here to help</p>
-      <h2>Contact us, we are here to help!</h2>
-      <p>Stop by either location, call ahead, or shop online. Let's grow something amazing together.</p>
-      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-        <a class="btn btn-lg" style="background:#fff;color:var(--clay)" href="tel:+18124823338">Call Jasper · (812) 482-3338</a>
-        <a class="btn btn-lg btn-ghost" href="tel:+18123262414">Call St. Anthony · (812) 326-2414</a>
-      </div>
-    </div></div>
-  </section>
 </main>
 
 <footer class="ftr">
   <div class="wrap">
     <div class="ftr-top">
       <div>
-        <a class="brand" href="#top"><img class="brand-logo" src="images/logo.webp" alt="Green Thumb logo" width="42" height="42"> Green Thumb</a>
+        <a class="brand" href="index.html"><img class="brand-logo" src="images/logo.webp" alt="Green Thumb logo" width="42" height="42"> Green Thumb</a>
         <p>Green Thumb Landscaping and Garden Center — Dubois County's oldest florist &amp; garden center and most trusted landscaping company.</p>
         <div class="badges">Licensed and insured<br>Master Nursery Garden Centers<br>Jasper Chamber of Commerce<br>Jasper Downtown Merchants Association</div>
         <div class="socials">
@@ -398,7 +396,7 @@ p{margin:0 0 1rem}
           <a href="https://www.tiktok.com/@greenthumbjasper" aria-label="TikTok" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2 1.6 3.6 3.6 3.9v3c-1.4 0-2.7-.4-3.6-1v6.1A6 6 0 1 1 10 9.2v3.1a3 3 0 1 0 3 2.9V3Z"/></svg></a>
         </div>
       </div>
-      <div><h4>Quick Links</h4><ul><li><a href="#top">Home</a></li><li><a href="#garden">Garden Center</a></li><li><a href="#landscaping">Landscaping</a></li><li><a href="#offerings">What We Grow</a></li><li><a href="https://shop.greenthumbinc.biz/" rel="noopener">Shop Now</a></li></ul></div>
+      <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="index.html#garden">Garden Center</a></li><li><a href="flowers.html">Flowers</a></li><li><a href="index.html#landscaping">Landscaping</a></li><li><a href="https://shop.greenthumbinc.biz/" rel="noopener">Shop Now</a></li></ul></div>
       <div><h4>Jasper Location</h4><ul><li>702 3rd Ave<br>Jasper, IN 47546</li><li>Phone: <a href="tel:+18124823338">(812) 482-3338</a></li><li>Garden Center &amp; Florist</li></ul></div>
       <div><h4>Schnellville Location</h4><ul><li>4495 E. Schnellville Rd<br>St. Anthony, IN 47575</li><li>Other Phone: <a href="tel:+18123262414">(812) 326-2414</a></li><li>Landscaping &amp; Materials</li></ul></div>
     </div>
@@ -424,6 +422,7 @@ tg.addEventListener("click",function(){var o=lk.classList.toggle("open");tg.setA
 lk.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){lk.classList.remove("open")})});
 var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12});
 document.querySelectorAll(".reveal").forEach(function(n){io.observe(n)});
+var sf=document.getElementById("shopfilter");if(sf){sf.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;sf.querySelectorAll("button").forEach(function(x){x.classList.remove("on")});b.classList.add("on");var ff=b.getAttribute("data-f");document.querySelectorAll("#shopgrid .card").forEach(function(c){c.style.display=(ff==="all"||c.getAttribute("data-cat")===ff)?"":"none"})})}
 var KB=[
  {k:["hour","open","when","time","close","sunday","saturday"],a:"We're open Mon–Fri 8:30 AM–5:30 PM and Sat 8:30 AM–3:00 PM. Closed Sundays."},
  {k:["where","location","address","jasper","anthony","schnellville","direction"],a:"Two locations! Garden center &amp; florist at 702 3rd Ave, Jasper. Landscaping &amp; materials at 4495 E. Schnellville Rd, St. Anthony."},
